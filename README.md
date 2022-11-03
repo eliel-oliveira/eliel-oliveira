@@ -1,10 +1,9 @@
 ### Olá! sou Eliel Oliveira, estudante de desenvolvimento web na Trybe!
 
-- 🌱 Estudando Typescript
 <div align="center">
   <a href="https://github.com/eliel-oliveira">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&layout=compact&langs_count=7&theme=github_dark"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
+  <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&layout=compact&langs_count=7&theme=github_dark"/>
 </div>
 <div style="display: inline_block"><br>
   <img align="center" alt="ico-js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
@@ -34,8 +33,6 @@
 </div>
 <!--
 **eliel-oliveira/eliel-oliveira** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
 
 - 🌱 Estudando Typescript
 
