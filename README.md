@@ -1,7 +1,7 @@
 ## Olá! sou Eliel Oliveira, estudante de desenvolvimento web na Trybe!
 <div style="display:flex">
   <a href="https://github.com/eliel-oliveira">
-  <img height="150em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/><img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&layout=compact&langs_count=1&theme=github_dark"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/><img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&layout=compact&langs_count=1&theme=github_dark"/>
 </div>
 
 <div style="display: inline_block"><br>
