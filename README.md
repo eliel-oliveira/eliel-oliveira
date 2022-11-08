@@ -1,17 +1,15 @@
 <h1> Olá mundo! sou Eliel Oliveira...</h1>
 
 <div align="center">
-<h3>👨🏻‍💻 Estudante de Desenvolvimento Web na Trybe</h3>
-  Atualmente no módulo de Back-end
-  ![](https://geps.dev/progress/60)
-  <br>
+  
+  <h3>👨🏻‍💻 Estudante de Desenvolvimento Web na Trybe <img src="https://geps.dev/progress/60" /></h3>
   <img height="170em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&theme=blue-green" alt="github status eliel"/>
   <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&theme=blue-green" alt ="github status 2 eliel" />
   
 </div>
 
 <div align="center">
-<h3>📡 Tecnologias</h3>
+<h2>📡 Tecnologias</h2>
 <div>
 <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="logo-git"/>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="logo-html5"/>
@@ -39,7 +37,7 @@
 <br>
 
 <div align="center">
-<h3>Links</h3>
+<h2>Links</h2>
   <a href="https://www.youtube.com/channel/UC7KsOdRsIint4zl08eC-mGg" target="_blank"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" target="_blank"></a>
   <a href="https://www.instagram.com/eliel.oliveira96/?theme=dark" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a> 
   <a href = "mailto:elielsjc@hotmail.com"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a>
