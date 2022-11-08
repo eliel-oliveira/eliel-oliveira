@@ -4,7 +4,7 @@
 <h3>👨🏻‍💻 Estudante de Desenvolvimento Web na Trybe</h3>
   Atualmente no módulo de Back-end
   ![](https://geps.dev/progress/60)
-  
+  <br>
   <img height="170em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&theme=blue-green" alt="github status eliel"/>
   <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&theme=blue-green" alt ="github status 2 eliel" />
   
