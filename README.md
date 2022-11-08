@@ -1,16 +1,13 @@
 <h1> Olá mundo! sou Eliel Oliveira...</h1>
 
-<div align="center">
-  
+<div align="center">  
   <h3>👨🏻‍💻 Estudante de Desenvolvimento Web na Trybe <img src="https://geps.dev/progress/60" /></h3>
   <img height="170em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&theme=blue-green" alt="github status eliel"/>
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&theme=blue-green" alt ="github status 2 eliel" />
-  
+  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&theme=blue-green" alt ="github status 2 eliel" />  
 </div>
 
 <div align="center">
 <h2>📡 Tecnologias</h2>
-<div>
 <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="logo-git"/>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="logo-html5"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="logo-css"/>
@@ -28,13 +25,8 @@
 <img src="https://img.shields.io/badge/sinon.js-323330?style=for-the-badge&logo=sinon" alt="logo-sinon.js"/>
 <img src="https://camo.githubusercontent.com/7f73136d92799b19be179d1ed87b461120c35ed917c7d5ab59a7606209da7bd3/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f457870726573732e6a732d3030303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d65787072657373266c6f676f436f6c6f723d7768697465" alt="logo-express"/>
 <img src="https://camo.githubusercontent.com/92407fc26e09271d8137b8aaf1585b266f04046b96f1564dfe5a69f146e21301/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a57542d3030303030303f7374796c653d666f722d7468652d6261646765266c6f676f3d4a534f4e253230776562253230746f6b656e73266c6f676f436f6c6f723d7768697465" alt="logo-jwt" />
-
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="logo-typescript"/>
 </div>
-</div>
-<br>
-<br>
-<br>
 
 <div align="center">
 <h2>Links</h2>
