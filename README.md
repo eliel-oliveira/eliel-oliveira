@@ -5,6 +5,8 @@
   
   ![](https://geps.dev/progress/60)
   
+  <img src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&theme=blue-green" alt="github eliel status"/>
+  
 </div>
 
 <div align="center">
