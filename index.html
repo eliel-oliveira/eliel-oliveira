@@ -5,13 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>By Eliel Oliveira</title>
+    <style>
+        * {
+            background-color: rgb(43, 43, 43);
+            color: white;
+        }
+        #btn {
+            background-color: rgb(114, 114, 240);
+            width: 100px;
+            height: 50px;
+        }
+
+    </style>
     <script>
         function getCopy() {            
             const text = getText();
             const params = getParams();
             const result = `${text} ${params}`
-            alert(result);
+            // alert(result);
             copyToClipboard(result);
+            updateCopy(result);
         }
 
         function copyToClipboard(text) {
@@ -33,10 +46,14 @@
             window.localStorage.setItem('text', params)
             return params
         }
+
+        function updateCopy(text) {
+            document.getElementById("clippboard").textContent = text
+         }
     </script>
 </head>
 <body>
-    <h1>Midjourney helper</h1>
+    <h1>Midjourney helper</h1><h6>by Eliel Oliveira</h6>    
     <h2>Texto</h2>
     <textarea
         id="getText"
@@ -52,7 +69,13 @@
     ></textarea>
     <br>
     <button
+    id="btn"
     onclick=getCopy()
-    >Copy</button>
+    >Copiar</button>
+
+    <h3>Ultimo texto copiado</h3>
+    <p id="clippboard">...</p>
+
+
 </body>
 </html>
