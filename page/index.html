@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Eliel Oliveira</title>
+    <script>
+        function getCopy() {            
+            const text = getText();
+            const params = getParams();
+            const result = `${text} ${params}`
+            alert(result);
+            copyToClipboard(result);
+        }
+
+        function copyToClipboard(text) {
+            const textArea = document.createElement("textarea");
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            document.execCommand("Copy");
+            textArea.remove();
+        }
+        
+        function getText() {
+            const text = document.getElementById("getText").value
+            window.localStorage.setItem('text', text)
+            return text
+        }
+        function getParams() {
+            const params = document.getElementById("getParams").value
+            window.localStorage.setItem('text', params)
+            return params
+        }
+    </script>
+</head>
+<body>
+    <h1>Midjourney helper</h1>
+    <h2>Texto</h2>
+    <textarea
+        id="getText"
+        style="height: 100px; width: 70%;"
+        onchange= getText()
+        ></textarea>
+    <br>
+    <h2>Parametros</h2>
+    <textarea
+        id="getParams"
+        style="height: 100px; width: 70%;"
+        onchange= getParams()
+    ></textarea>
+    <br>
+    <button
+    onclick=getCopy()
+    >Copy</button>
+</body>
+</html>
