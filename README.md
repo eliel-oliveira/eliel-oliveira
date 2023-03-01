@@ -1,9 +1,9 @@
 <h1> Olá mundo! sou Eliel Oliveira...</h1>
 
 <div align="center">  
-  <h3>👨🏻‍💻 Estudante de Desenvolvimento Web na Trybe <img src="https://geps.dev/progress/81" /></h3>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&theme=blue-green" alt="github status eliel"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&theme=blue-green" alt ="github status 2 eliel" />  
+  <h3>👨🏻‍💻 Estudante de Desenvolvimento Web na Trybe <img src="https://geps.dev/progress/83" /></h3>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=eliel-oliveira&theme=react" alt="github status eliel"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=eliel-oliveira&theme=react" alt ="github status 2 eliel" />  
 </div>
 
 <div align="center">
