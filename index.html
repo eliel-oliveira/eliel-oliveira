@@ -18,6 +18,14 @@
 
     </style>
     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const params = window.localStorage.getItem('text2')
+            const text = window.localStorage.getItem('text1')
+            // const params = localStorage.getItem(text1)
+            // const text = localStorage.getItem(text2)
+            document.getElementById("getParams").value = params
+            document.getElementById("getText").value = text
+        })
         // function getCopy() {            
         //     const text = getText();
         //     const params = getParams();
@@ -50,17 +58,23 @@
         
         function getText() {
             const text = document.getElementById("getText").value
-            window.localStorage.setItem('text', text)
+            window.localStorage.setItem('text1', text)
             return text
         }
         function getParams() {
             const params = document.getElementById("getParams").value
-            window.localStorage.setItem('text', params)
+            window.localStorage.setItem('text2', params)
             return params
         }
 
         function updateCopy(text) {
             document.getElementById("clippboard").textContent = text
+         }
+
+         function clearLocalstorage() {
+            window.localStorage.setItem('text1', '')
+            window.localStorage.setItem('text2', '')
+            location.reload()
          }
     </script>
 </head>
@@ -70,7 +84,7 @@
     <div>
         <div>
             <h2>WorkshopID</h2>
-            <textarea id="getParams" style="height: 100px; width: 70%;" onchange= getParams() ></textarea>
+            <textarea id="getParams" style="height: 100px; width: 70%;" onchange= getParams()></textarea>
             <button id="btn" onclick=copyWork() >Copiar</button>
         </div>
         <div>
@@ -78,6 +92,7 @@
             <textarea id="getText" style="height: 100px; width: 70%;" onchange= getText()></textarea>
             <button id="btn" onclick=copyItem() >Copiar</button>
         </div>
+        <button id="btnclear" onclick=clearLocalstorage() >Limpar</button>
     </div>
 </body>
 </html>
