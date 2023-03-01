@@ -18,13 +18,25 @@
 
     </style>
     <script>
-        function getCopy() {            
-            const text = getText();
+        // function getCopy() {            
+        //     const text = getText();
+        //     const params = getParams();
+        //     const result = `${text} ${params}`
+        //     // alert(result);
+        //     copyToClipboard(result);
+        //     updateCopy(result);
+        // }
+        
+        function copyItem() {
+            const text = getText()
+            copyToClipboard(text)
+            updateCopy(text)
+        }
+
+        function copyWork() {
             const params = getParams();
-            const result = `${text} ${params}`
-            // alert(result);
-            copyToClipboard(result);
-            updateCopy(result);
+            copyToClipboard(params)
+            updateCopy(params)
         }
 
         function copyToClipboard(text) {
@@ -53,7 +65,7 @@
     </script>
 </head>
 <body>
-    <h1>Midjourney helper</h1>
+    <!-- <h1>Midjourney helper</h1>
     <h6>
        <a href="https://www.linkedin.com/in/dev-eliel-oliveira/" target="_blank">by Eliel Oliveira</a>
     </h6>    
@@ -77,8 +89,20 @@
     >Copiar</button>
 
     <h3>Ultimo texto copiado</h3>
-    <p id="clippboard">...</p>
-
-
+    <p id="clippboard">...</p> -->
+    <h1>Project zomboid - list your mods</h1>
+    <h6><a href="https://www.linkedin.com/in/dev-eliel-oliveira/" target="_blank">by Eliel Oliveira</a></h6>
+    <div>
+        <div>
+            <h2>ItemID</h2>
+            <textarea id="getText" style="height: 100px; width: 70%;" onchange= getText()></textarea>
+            <button id="btn" onclick=copyItem() >Copiar</button>
+        </div>
+        <div>
+            <h2>WorkshopID</h2>
+            <textarea id="getParams" style="height: 100px; width: 70%;" onchange= getParams() ></textarea>
+            <button id="btn" onclick=copyWork() >Copiar</button>
+        </div>
+    </div>
 </body>
 </html>
