@@ -29,14 +29,14 @@
         
         function copyItem() {
             const text = getText()
-            copyToClipboard(text)
-            updateCopy(text)
+            copyToClipboard(text.replace(/ /g, ";"))
+            updateCopy(text.replace(/ /g, ";"))
         }
 
         function copyWork() {
             const params = getParams();
-            copyToClipboard(params)
-            updateCopy(params)
+            copyToClipboard(params.replace(/ /g, ";"))
+            updateCopy(params.replace(/ /g, ";"))
         }
 
         function copyToClipboard(text) {
@@ -65,31 +65,6 @@
     </script>
 </head>
 <body>
-    <!-- <h1>Midjourney helper</h1>
-    <h6>
-       <a href="https://www.linkedin.com/in/dev-eliel-oliveira/" target="_blank">by Eliel Oliveira</a>
-    </h6>    
-    <h2>Texto</h2>
-    <textarea
-        id="getText"
-        style="height: 100px; width: 70%;"
-        onchange= getText()
-        ></textarea>
-    <br>
-    <h2>Parametros</h2>
-    <textarea
-        id="getParams"
-        style="height: 100px; width: 70%;"
-        onchange= getParams()
-    ></textarea>
-    <br>
-    <button
-    id="btn"
-    onclick=getCopy()
-    >Copiar</button>
-
-    <h3>Ultimo texto copiado</h3>
-    <p id="clippboard">...</p> -->
     <h1>Project zomboid - list your mods</h1>
     <h6><a href="https://www.linkedin.com/in/dev-eliel-oliveira/" target="_blank">by Eliel Oliveira</a></h6>
     <div>
