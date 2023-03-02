@@ -20,20 +20,14 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const params = window.localStorage.getItem('text2')
+            const paramsQTD = window.localStorage.getItem('paramsQuantity')
             const text = window.localStorage.getItem('text1')
-            // const params = localStorage.getItem(text1)
-            // const text = localStorage.getItem(text2)
+            const textQTD = window.localStorage.getItem('textQuantity')
             document.getElementById("getParams").value = params
             document.getElementById("getText").value = text
+            document.getElementById("contParam").innerHTML = paramsQTD
+            document.getElementById("contText").innerHTML = textQTD
         })
-        // function getCopy() {            
-        //     const text = getText();
-        //     const params = getParams();
-        //     const result = `${text} ${params}`
-        //     // alert(result);
-        //     copyToClipboard(result);
-        //     updateCopy(result);
-        // }
         
         function copyItem() {
             const text = getText()
@@ -59,11 +53,13 @@
         function getText() {
             const text = document.getElementById("getText").value
             window.localStorage.setItem('text1', text)
+            getTextQtd()
             return text
         }
         function getParams() {
             const params = document.getElementById("getParams").value
             window.localStorage.setItem('text2', params)
+            getParamsQtd()
             return params
         }
 
@@ -71,25 +67,56 @@
             document.getElementById("clippboard").textContent = text
          }
 
-         function clearLocalstorage() {
-            window.localStorage.setItem('text1', '')
-            window.localStorage.setItem('text2', '')
-            location.reload()
-         }
+        function clearLocalstorage() {
+           window.localStorage.setItem('text1', '')
+           window.localStorage.setItem('text2', '')
+           location.reload()
+        }
+
+        function getParamsQtd() {
+            const params =  document.getElementById("getParams").value;
+            const cont = params.trim().split(/\s+/).length
+            window.localStorage.setItem('paramsQuantity', cont)
+            document.getElementById("contParam").innerHTML = cont
+        }
+
+        function getTextQtd() {
+            const text =  document.getElementById("getText").value;
+            const cont = text.trim().split(/\s+/).length
+            window.localStorage.setItem('textQuantity', cont)
+            document.getElementById("contText").innerHTML = cont
+        }
     </script>
 </head>
 <body>
     <h1>Project zomboid - list your mods</h1>
     <h6><a href="https://www.linkedin.com/in/dev-eliel-oliveira/" target="_blank">by Eliel Oliveira</a></h6>
     <div>
+        <h2>Descrição</h2>
+        <p>Pagina com o intuito de auxiliar na adição de mods a servidores no project zomboid</p>
+        <p>Digite na caixa abaixo o workshop id e modId dos mods nas caixa abaixo, separando por espaços</p>
+        <p>exemplo: -- input --> 2939187818 2939187818 2939187818 // output --> 2939187818;2939187818;2939187818</p>
+    </div>
+    <a href="https://steamcommunity.com/app/108600/workshop/" target="_blank"><p>Steam Project Zomboid Workshop</p></a>
+    <div>
         <div>
             <h2>WorkshopID</h2>
-            <textarea id="getParams" style="height: 100px; width: 70%;" onchange= getParams()></textarea>
+            <div>
+                Quantidade de WorkshopID:
+                <span id="contParam">0</span>
+            </div>
+            <textarea id="getParams" style="height: 100px; width: 70%;" onchange= getParams()></textarea>           
+            <br>
             <button id="btn" onclick=copyWork() >Copiar</button>
         </div>
         <div>
             <h2>ItemID</h2>
+            <div>
+                Quantidade de WorkshopID:
+                <span id="contText">0</span>
+            </div>
             <textarea id="getText" style="height: 100px; width: 70%;" onchange= getText()></textarea>
+            <br>
             <button id="btn" onclick=copyItem() >Copiar</button>
         </div>
         <button id="btnclear" onclick=clearLocalstorage() >Limpar</button>
